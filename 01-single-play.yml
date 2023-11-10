@@ -1,0 +1,12 @@
+#  ansible n1 -m file "path=/home/centos/n1_dir state=directory"
+---
+- name: Update n1 server
+  hosts: n1
+  
+
+  tasks:
+  - name: Create Directory
+    file: 
+      name: /home/centos/new_dir
+      state: directory
+...
