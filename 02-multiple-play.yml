@@ -2,14 +2,12 @@
 - name: Update n1 server
   hosts: n1
   
-
   tasks:
   - name: Create Directory
     file: 
       name: /home/centos/new_dir
       state: directory
 
-  tasks:
   - name: Create Directory
     file: 
       name: /home/centos/new_dir_1
@@ -24,7 +22,6 @@
       name: /home/centos/new_dir_1
       state: directory
 
-  tasks:
   - name: Create Directory
     file: 
       name: /home/centos/new_dir_2
@@ -38,7 +35,7 @@
     file: 
       name: /home/centos/new_dir_group1
       state: directory
-  tasks:
+
   - name: Create Directory
     file: 
       name: /home/centos/new_dir_group2
